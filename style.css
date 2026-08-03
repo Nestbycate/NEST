@@ -1464,3 +1464,103 @@ THE JOURNEY CONTINUES
     font-weight:bold;
 
 }
+/*======================================================
+N.E.S.T. VERSION 2
+Gentle Flow
+======================================================*/
+
+/* Soft section transitions */
+
+section{
+
+    position:relative;
+
+    padding:100px 0;
+
+}
+
+/* Alternate backgrounds */
+
+#about{
+
+    background:#FCFBF7;
+
+}
+
+#mission{
+
+    background:white;
+
+}
+
+#impact{
+
+    background:#F7FAF7;
+
+}
+
+#gallery{
+
+    background:white;
+
+}
+
+#contact{
+
+    background:#FCFBF7;
+
+}
+
+/* Organic divider */
+
+.wave-divider{
+
+    position:absolute;
+
+    bottom:-1px;
+
+    left:0;
+
+    width:100%;
+
+    overflow:hidden;
+
+    line-height:0;
+
+}
+
+.wave-divider svg{
+
+    display:block;
+
+    width:100%;
+
+    height:70px;
+
+}
+
+.wave-divider path{
+
+    fill:white;
+
+}
+
+/* Scroll reveal */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(35px);
+
+    transition:all .9s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
