@@ -1187,10 +1187,11 @@ scroll-snap-type:x mandatory;
 
 .story-card{
 
-    width:430px;
+    width:470px;
 
-min-height:500px;
-    padding:18px;
+    min-height:320px;
+
+    padding:24px;
     border-radius:12px;
     position:relative;
 
@@ -1250,35 +1251,6 @@ min-height:500px;
 
 }
 
-/* photo */
-
-.story-icon{
-
-    width:100%;
-
-    height:260px;
-
-    overflow:hidden;
-
-    border:10px solid white;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
-
-    margin-bottom:20px;
-
-    background:white;
-
-}
-
-.story-icon img{
-
-    width:100%;
-
-    height:100%;
-
-    object-fit:cover;
-
-}
 
 .story-card h3{
 
@@ -2431,7 +2403,7 @@ WALK WITH ME
 
     display:grid;
 
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(2,minmax(420px,1fr));
 
     gap:30px;
 
@@ -2759,3 +2731,173 @@ FOOTER BRAND POLISH
     font-style:italic;
 
 }
+/*======================================================
+HOPE STORIES
+======================================================*/
+
+.stories-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:28px;
+
+    margin-top:60px;
+
+}
+
+.story-card{
+
+    padding:24px 30px;
+    min-height:330px;
+
+    border-radius:22px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+    position:relative;
+
+}
+
+.story-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.12);
+
+}
+
+.story-card:nth-child(3){
+
+    grid-column:1 / span 2;
+
+    max-width:520px;
+
+    margin:0 auto;
+
+
+}
+
+
+.story-icon{
+
+    font-size:2.6rem;
+
+    margin-bottom:15px;
+
+}
+
+.story-card h3{
+
+    font-family:Georgia,serif;
+
+    color:#214E34;
+
+    margin-bottom:15px;
+
+}
+.story-card:nth-child(1) h3{
+
+    font-family:"Georgia",serif;
+
+}
+
+.story-card:nth-child(2) h3{
+
+    font-family:"Trebuchet MS",sans-serif;
+
+}
+
+.story-card:nth-child(3) h3{
+
+    font-family:"Palatino Linotype",serif;
+
+}
+
+.story-card:nth-child(4) h3{
+
+    font-family:"Verdana",sans-serif;
+
+}
+
+.story-card:nth-child(5) h3{
+
+    font-family:"Garamond",serif;
+
+}
+
+.story-card p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.story-quote{
+
+    margin-top:20px;
+
+    padding-top:15px;
+
+    border-top:1px solid rgba(0,0,0,.08);
+
+    font-style:italic;
+
+    color:#214E34;
+
+}
+
+/* warm colours */
+
+.green{
+
+    background:#EAF4EA;
+
+}
+
+.sand{
+
+    background:#FFF4DA;
+
+}
+
+.gold{
+
+    background:#F8F0D6;
+
+}
+
+.rose{
+
+    background:#FBE8DE;
+
+}
+
+.blue{
+
+    background:#EEF5FB;
+
+}
+
+@media(max-width:900px){
+
+    .stories-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .story-card:nth-child(3){
+
+    grid-column:1 / span 2;
+
+    max-width:760px;
+
+    margin:0 auto;
+
+}
+    }
