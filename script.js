@@ -73,3 +73,54 @@ function revealSections(){
 window.addEventListener("scroll",revealSections);
 
 window.addEventListener("load",revealSections);
+/*=========================================
+LIGHTBOX
+=========================================*/
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const lightboxClose = document.getElementById("lightbox-close");
+
+console.log(lightbox);
+console.log(lightboxImage);
+console.log(lightboxClose);
+
+document.querySelectorAll(".lightbox-trigger").forEach(image => {
+
+    image.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        lightboxImage.src = this.href;
+
+        lightbox.classList.add("active");
+
+    });
+
+});
+
+lightboxClose.addEventListener("click", () => {
+
+    lightbox.classList.remove("active");
+
+});
+
+lightbox.addEventListener("click", e => {
+
+    if(e.target===lightbox){
+
+        lightbox.classList.remove("active");
+
+    }
+
+});
+
+document.addEventListener("keydown", e=>{
+
+    if(e.key==="Escape"){
+
+        lightbox.classList.remove("active");
+
+    }
+
+});
